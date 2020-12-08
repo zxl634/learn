@@ -5,3 +5,4 @@
 3. [Setting up a Django project reproducibly](3.md) (TODO)
 4. [Changing string in file from make target](4.md)
 5. [Testing with makefiles](5.md) (TODO)
+6. [memcached](6.md) (TODO)
