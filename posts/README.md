@@ -6,3 +6,6 @@
 4. [Changing string in file from make target](4.md)
 5. [Testing with makefiles](5.md) (TODO)
 6. [memcached](6.md) (TODO)
+7. [refering to path of file in vim](7.md) (TODO)
+8. [setup Django on AWS](8.md) (TODO)
+9. [Changing Django guide on Docker web page](9.md) (TODO)
