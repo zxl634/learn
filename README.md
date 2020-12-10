@@ -2,7 +2,7 @@
 
 See the following list for specific posts or browse the individual folders for example projects, e.g. [python/django](python/django).
 
-1. [Setting up the showcases repo](posts/1.md)
+1. [Setting up the repo](posts/1.md)
 2. [Including content from other files in markdown](posts/2.md) (TODO)
 3. [Setting up a Django project reproducibly](posts/3.md) (TODO)
 4. [Changing string in file from make target](makefiles/1/README.md)
