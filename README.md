@@ -11,3 +11,4 @@ See the following list for specific posts or browse the individual folders for e
 7. [refering to path of file in vim](posts/7.md) (TODO)
 8. [setup Django on AWS](posts/8.md) (TODO)
 9. [Changing Django guide on Docker web page](posts/9.md) (TODO)
+10. [Starting a Django project](posts/10.md)
