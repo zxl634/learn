@@ -9,3 +9,4 @@
 7. [refering to path of file in vim](7.md) (TODO)
 8. [setup Django on AWS](8.md) (TODO)
 9. [Changing Django guide on Docker web page](9.md) (TODO)
+10. [On handling frustration](10.md)
