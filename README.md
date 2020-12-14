@@ -13,7 +13,9 @@ See the following list for specific posts or browse the individual folders for e
 9. [Changing Django guide on Docker web page](posts/9.md) (TODO)
 10. [Starting a Django project](posts/10.md)
 11. [Setup ClojureScript project](posts/11.md)
+12. [Using Gdiffsplit in vertical split](vim/1/README.md)
 
 ## Ideas for posts
 * Import content from other clojurescript file
 * Test that all links work in this repo, i.e. should not find 404 error
+* Set up Git Actions with this repo
