@@ -15,9 +15,12 @@ See the following list for specific posts or browse the individual folders for e
 11. [Setup ClojureScript project](posts/11.md)
 12. [Using Gdiffsplit in vertical split](vim/1/README.md)
 13. [Contributing to open source software](posts/12.md)
+14. [Use ClojureScript in Django project](posts/13.md)
 
 ## Ideas for posts
 * Import content from other clojurescript file
 * Test that all links work in this repo, i.e. should not find 404 error
 * Set up Git Actions with this repo
 * Contribute to other OS projects
+* Make TD2 public repo
+* Make askme/surveyquiz public
