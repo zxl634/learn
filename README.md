@@ -16,6 +16,7 @@ See the following list for specific posts or browse the individual folders for e
 12. [Using Gdiffsplit in vertical split](vim/1/README.md)
 13. [Contributing to open source software](posts/12.md)
 14. [Use ClojureScript in Django project](posts/13.md) (WIP)
+15. [Debugging techniques](posts/14.md)
 
 ## Ideas for posts
 * Import content from other clojurescript file
