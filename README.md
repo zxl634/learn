@@ -26,3 +26,6 @@ See the following list for specific posts or browse the individual folders for e
 * Contribute to other OS projects
 * Make TD2 public repo
 * Make askme/surveyquiz public
+* Investigate difference between `command > /dev/null` and `command 2>&1 > /dev/null` (if any), see [here](posts/15.md)
+* Write up of `kill -9 $(jobs -p)` command (from [here](https://unix.stackexchange.com/questions/43527/kill-all-background-jobs))
+* Write up of `kill -9 $(lsof -i:8000)` see [here](https://stackoverflow.com/questions/33615683/how-to-access-the-pid-from-an-lsof)
