@@ -18,6 +18,7 @@ See the following list for specific posts or browse the individual folders for e
 14. [Use ClojureScript in Django project](posts/13.md) (WIP)
 15. [Debugging techniques](posts/14.md)
 16. [Starting a process in the background in bash and redirecting output](posts/15.md)
+17. [Simple demo of NW.js](posts/17.md) (WIP)
 
 ## Ideas for posts
 * Import content from other clojurescript file
