@@ -3,17 +3,16 @@
 See the following list for specific posts or browse the individual folders for example projects, e.g. [python/django](python/django).
 
 1. [Setting up the repo](posts/1.md)
-2. [Including content from other files in markdown](posts/2.md) (TODO)
-3. [Setting up a Django project in Docker](posts/3.md)
-4. [Changing string in file from make target](makefiles/1/README.md)
-5. [Starting a Django project](posts/10.md)
-6. [Setup ClojureScript project](posts/11.md)
-7. [Using Gdiffsplit in vertical split](vim/1/README.md)
-8. [Contributing to open source software](posts/12.md)
-9. [Use ClojureScript in Django project](posts/13.md) (WIP)
-10. [Debugging techniques](posts/14.md)
-11. [Starting a process in the background in bash and redirecting output](posts/15.md)
-12. [Simple demo of NW.js](posts/17.md)
+2. [Setting up a Django project in Docker](posts/3.md)
+3. [Changing string in file from make target](makefiles/1/README.md)
+4. [Starting a Django project](posts/10.md)
+5. [Setup ClojureScript project](posts/11.md)
+6. [Using Gdiffsplit in vertical split](vim/1/README.md)
+7. [Contributing to open source software](posts/12.md)
+8. [Use ClojureScript in Django project](posts/13.md) (WIP)
+9. [Debugging techniques](posts/14.md)
+10. [Starting a process in the background in bash and redirecting output](posts/15.md)
+11. [Simple demo of NW.js](posts/17.md)
 
 ## Ideas for posts
 * Import content from other clojurescript file
@@ -31,3 +30,4 @@ See the following list for specific posts or browse the individual folders for e
 * [refering to path of file in vim](posts/7.md) (TODO)
 * [setup Django on AWS](posts/8.md) (TODO)
 * [Changing Django guide on Docker web page](posts/9.md) (TODO)
+* [Including content from other files in markdown](posts/2.md) (TODO)
