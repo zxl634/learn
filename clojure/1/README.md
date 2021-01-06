@@ -1,1 +1,1 @@
-posts/18.md
+../../posts/18.md
