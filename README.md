@@ -31,3 +31,4 @@ See the following list for specific posts or browse the individual folders for e
 * [setup Django on AWS](posts/8.md) (TODO)
 * [Changing Django guide on Docker web page](posts/9.md) (TODO)
 * [Including content from other files in markdown](posts/2.md) (TODO)
+* [Making custom migrations in Django](python/django/3/README.md)
