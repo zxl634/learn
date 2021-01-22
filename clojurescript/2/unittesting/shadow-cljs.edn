@@ -11,7 +11,7 @@
  {:test
   {:target    :node-test
    :output-to "out/node-tests.js"
-   :ns-regexp "-test$"
+   :ns-regexp "demo"
    :autorun   true}
  :demo
   {:target :browser

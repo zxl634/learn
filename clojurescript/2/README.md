@@ -64,7 +64,7 @@ Then I run `shadow-cljs watch demo`, which creates unittesting/public/js/main.js
 
 ## Testing setup
 
-I now create unittesting/src/test/demo/app-test.cljs.
+I now create unittesting/src/test/demo/app_test.cljs.
 
 Then I create another build target in unittesting/shadow-cljs.edn.
 
