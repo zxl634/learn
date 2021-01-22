@@ -2,7 +2,7 @@
 
 The goal of this post is to be able to use testing with ClojureScript as described [here](https://shadow-cljs.github.io/docs/UsersGuide.html#_testing).
 
-## Setup
+## Setup basic ClojureScript
 
 Using [https://github.com/thheller/shadow-cljs#quick-start](https://github.com/thheller/shadow-cljs#quick-start):
 ```console
@@ -58,6 +58,7 @@ $ cat unittesting/shadow-cljs.edn
    :modules {:main {:init-fn demo.app/init}}}}}
 ```
 
-Then I run `shadow-cljs watch demo`, which creates unittesting/public/js/main.js.
-
 I add `:dev-http {8080 "public"}` to unittesting/shadow-cljs.edn to be able to serve the file and add a simple index.html in unittesting/public/.
+
+Then I run `shadow-cljs watch demo`, which creates unittesting/public/js/main.js and can now see the page in the browser at http://localhost:8080 and the "Hello World" message in the console.
+
