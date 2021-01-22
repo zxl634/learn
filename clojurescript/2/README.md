@@ -62,3 +62,20 @@ I add `:dev-http {8080 "public"}` to unittesting/shadow-cljs.edn to be able to s
 
 Then I run `shadow-cljs watch demo`, which creates unittesting/public/js/main.js and can now see the page in the browser at http://localhost:8080 and the "Hello World" message in the console.
 
+## Testing setup
+
+I now create unittesting/src/test/demo/app-test.cljs.
+
+Then I create another build target in unittesting/shadow-cljs.edn.
+
+Ready to compile and run the tests:
+```console
+$ cd unittesting/ && shadow-cljs compile test && node out/node-tests.js
+shadow-cljs - config: /Users/anders/showcases/clojurescript/2/unittesting/shadow-cljs.edn
+[:test] Compiling ...
+The required namespace "demo.app-test" is not available.
+
+```
+
+
+

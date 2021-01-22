@@ -8,6 +8,11 @@
  []
  :dev-http {8080 "public"}
  :builds
- {:demo
+ {:test
+  {:target    :node-test
+   :output-to "out/node-tests.js"
+   :ns-regexp "-test$"
+   :autorun   true}
+ :demo
   {:target :browser
    :modules {:main {:init-fn demo.app/init}}}}}
