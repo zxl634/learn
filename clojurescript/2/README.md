@@ -71,11 +71,28 @@ Then I create another build target in unittesting/shadow-cljs.edn.
 Ready to compile and run the tests:
 ```console
 $ cd unittesting/ && shadow-cljs compile test && node out/node-tests.js
+
 shadow-cljs - config: /Users/anders/showcases/clojurescript/2/unittesting/shadow-cljs.edn
 [:test] Compiling ...
-The required namespace "demo.app-test" is not available.
+========= Running Tests =======================
 
+Testing demo.app-test
+
+FAIL in (a-failing-test) (demo/app_test.cljs:5:7)
+expected: (= 1 2)
+  actual: (not (= 1 2))
+
+Ran 1 tests containing 1 assertions.
+1 failures, 0 errors.
+===============================================
+[:test] Build completed. (48 files, 1 compiled, 0 warnings, 1,73s)
+
+Testing demo.app-test
+
+FAIL in (a-failing-test) (demo/app_test.cljs:5:7)
+expected: (= 1 2)
+  actual: (not (= 1 2))
+
+Ran 1 tests containing 1 assertions.
+1 failures, 0 errors.
 ```
-
-
-
