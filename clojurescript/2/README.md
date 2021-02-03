@@ -4,7 +4,8 @@ The goal of this post is to be able to use testing with ClojureScript as describ
 
 ## Setup basic ClojureScript
 
-Using [https://github.com/thheller/shadow-cljs#quick-start](https://github.com/thheller/shadow-cljs#quick-start):
+Using [this](https://github.com/thheller/shadow-cljs#quick-start):
+
 ```console
 $ npx create-cljs-project unittesting
 npx: installed 1 in 5.97s
