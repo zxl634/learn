@@ -1,3 +1,10 @@
-(ns main.app)
+(ns app
+  (:require
+    [cljs.core.async :refer [go]]
+    )
+  )
 
-(go (println "Hello Processes!"))
+(defn my-go []
+  (go (println "Hello Processes!"))
+  )
+

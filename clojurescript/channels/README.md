@@ -4,11 +4,12 @@ The goal is to be able to test async actions as described [here](https://stackov
 
 ## Tasks
 
-- [ ] Set up testing, see [here](../2/README.md).
+- [x] Set up testing, see [here](../2/README.md).
 
 ## Commands
 
-* Start testing: `shadow-cljs jkjk`
+* Start testing: `shadow-cljs watch test`
+* Start server: `shadow-cljs server`
 
 ## Theory
 

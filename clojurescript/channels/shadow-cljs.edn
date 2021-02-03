@@ -11,7 +11,9 @@
  :builds
  {
   :app
-    {:target :browser} 
+    {:target :browser
+     :modules {:main {:entries [app]}}
+     } 
   :test
     {:target :browser-test
      :test-dir "resources/public/js/test"
