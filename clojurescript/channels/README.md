@@ -6,6 +6,10 @@ The goal is to be able to test async actions as described [here](https://stackov
 
 - [ ] Set up testing, see [here](../2/README.md).
 
+## Commands
+
+* Start testing: `shadow-cljs jkjk`
+
 ## Theory
 
 ### https://www.learn-clojurescript.com/section-4/lesson-25-intro-to-core-async/
