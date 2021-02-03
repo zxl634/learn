@@ -9,7 +9,8 @@ The goal is to be able to test async actions as described [here](https://stackov
 ## Commands
 
 * Start testing: `shadow-cljs watch test`
-* Start server: `shadow-cljs server`
+* Start server: `shadow-cljs server` (start in background with `&`)
+* Repl: `shadow-cljs cljs-repl app` and then `(ns app)`.
 
 ## Theory
 
