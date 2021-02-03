@@ -1,6 +1,7 @@
 (ns app
+  (:require-macros [cljs.core.async.macros :refer [go]])
   (:require
-    [clojure.core.async :as async :refer :all]
+    [clojure.core.async :as async :refer [take!]]
     ))
 
 (defn my-go []
