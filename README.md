@@ -5,10 +5,10 @@ See the following list for specific posts or browse the individual folders for e
 * [Setting up a Django project in Docker](python/django/1/)
 * [Changing string in file from make target](makefiles/1/)
 * [Setup ClojureScript project](clojurescript/1/)
+* [Using Gdiffsplit in vertical split](vim/1/README.md)
+* [Contributing to open source software](posts/12.md)
+* [Use ClojureScript in Django project](python/django/2/) (WIP)
 
-6. [Using Gdiffsplit in vertical split](vim/1/README.md)
-7. [Contributing to open source software](posts/12.md)
-8. [Use ClojureScript in Django project](posts/13.md) (WIP)
 9. [Debugging techniques](posts/14.md)
 10. [Starting a process in the background in bash and redirecting output](posts/15.md)
 11. [Simple demo of NW.js](posts/17.md)
