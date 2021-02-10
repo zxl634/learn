@@ -49,7 +49,7 @@ $ cat clojure-noob/src/clojure_noob/core.clj
   (println "I'm a litte teapot!"))
 ```
 
-Having made some minor changes to [clojure-noob/src/clojure_noob/core.clj](clojure/1/clojure-noob/src/clojure_noob/core.clj), I now run the program:
+Having made some minor changes to [clojure-noob/src/clojure_noob/core.clj](clojure-noob/src/clojure_noob/core.clj), I now run the program:
 ```console
 $ cd clojure-noob/ && lein run
 Java HotSpot(TM) 64-Bit Server VM warning: Options -Xverify:none and -noverify were deprecated in JDK 13 and will likely be removed in a future release.
