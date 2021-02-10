@@ -1,8 +1,6 @@
 # Learning repository with posts and projects
 
-Repository with posts and projects used for learning.
-
-[toc]
+Repository with posts and projects used for learning. Organised roughly by language and assorted topics in [posts](posts/).
 
 ## Python
 
