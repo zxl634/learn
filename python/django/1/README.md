@@ -1,6 +1,6 @@
 # Starting a Django project
 
-I start by creating making a virtual environment[1] with `python3 -m venv django_env`. Having activated this (`source django_env/bin/activate`), I install django from a [requirements.txt](mysite/requirements.txt) with Django and (psycopg2)[https://pypi.org/project/psycopg2/] with `pip install -r requirements.txt`.
+I start by creating making a virtual environment[1] with `python3 -m venv django_env`. Having activated this (`source django_env/bin/activate`), I install django from a [requirements.txt](mysite/requirements.txt) with Django and [psycopg2](https://pypi.org/project/psycopg2/) with `pip install -r requirements.txt`.
 
 I then create a Django project with `django-admin startproject mysite`.[2]
 
