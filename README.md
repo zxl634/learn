@@ -8,10 +8,10 @@ See the following list for specific posts or browse the individual folders for e
 * [Using Gdiffsplit in vertical split](vim/1/README.md)
 * [Contributing to open source software](posts/12.md)
 * [Use ClojureScript in Django project](python/django/2/) (WIP)
+* [Debugging techniques](posts/14.md)
+* [Starting a process in the background in bash and redirecting output](posts/15.md)
+* [Simple demo of NW.js](nwjs/1/)
 
-9. [Debugging techniques](posts/14.md)
-10. [Starting a process in the background in bash and redirecting output](posts/15.md)
-11. [Simple demo of NW.js](posts/17.md)
 12. [Setting up a Clojure program](posts/18.md)
 
 ## Ideas for posts
@@ -25,10 +25,10 @@ See the following list for specific posts or browse the individual folders for e
 * Write up of `kill -9 $(jobs -p)` command (from [here](https://unix.stackexchange.com/questions/43527/kill-all-background-jobs))
 * Write up of `kill -9 $(lsof -i:8000)` see [here](https://stackoverflow.com/questions/33615683/how-to-access-the-pid-from-an-lsof)
 * Understand `shadow-cljs` https://shadow-cljs.github.io/docs/UsersGuide.html
-* [Testing with makefiles](posts/5.md) (TODO)
-* [memcached](posts/6.md) (TODO)
-* [refering to path of file in vim](posts/7.md) (TODO)
-* [setup Django on AWS](posts/8.md) (TODO)
-* [Changing Django guide on Docker web page](posts/9.md) (TODO)
-* [Including content from other files in markdown](posts/2.md) (TODO)
+* [Testing with makefiles](posts/5.md)
+* [memcached](posts/6.md)
+* [refering to path of file in vim](posts/7.md)
+* [setup Django on AWS](posts/8.md)
+* [Changing Django guide on Docker web page](posts/9.md)
+* [Including content from other files in markdown](posts/2.md)
 * [Making custom migrations in Django](python/django/3/README.md)
