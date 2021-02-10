@@ -11,8 +11,7 @@ See the following list for specific posts or browse the individual folders for e
 * [Debugging techniques](posts/14.md)
 * [Starting a process in the background in bash and redirecting output](posts/15.md)
 * [Simple demo of NW.js](nwjs/1/)
-
-12. [Setting up a Clojure program](posts/18.md)
+* [Setting up a Clojure program](clojure/1/)
 
 ## Ideas for posts
 * Import content from other clojurescript file
