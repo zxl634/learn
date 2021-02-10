@@ -2,18 +2,34 @@
 
 See the following list for specific posts or browse the individual folders for example projects, e.g. [python/django](python/django).
 
+## Python
+
+### Django
 * [Setting up a Django project in Docker](python/django/1/)
-* [Changing string in file from make target](makefiles/1/)
-* [Setup ClojureScript project](clojurescript/1/)
-* [Using Gdiffsplit in vertical split](vim/1/README.md)
-* [Contributing to open source software](posts/12.md)
 * [Use ClojureScript in Django project](python/django/2/) (WIP)
-* [Debugging techniques](posts/14.md)
-* [Starting a process in the background in bash and redirecting output](posts/15.md)
-* [Simple demo of NW.js](nwjs/1/)
+
+## Vim
+* [Using Gdiffsplit in vertical split](vim/1/README.md)
+
+## Makefiles
+* [Changing string in file from make target](makefiles/1/)
+
+## ClojureScript
+* [Setup ClojureScript project](clojurescript/1/)
+* [Use ClojureScript in Django project](python/django/2/) (WIP)
+
+## Clojure
 * [Setting up a Clojure program](clojure/1/)
 
-## Ideas for posts
+## Nwjs
+* [Simple demo of NW.js](nwjs/1/)
+
+## Posts
+* [Contributing to open source software](posts/12.md)
+* [Debugging techniques](posts/14.md)
+* [Starting a process in the background in bash and redirecting output](posts/15.md)
+
+## Ideas for posts and projects
 * Import content from other clojurescript file
 * Test that all links work in this repo, i.e. should not find 404 error
 * Set up Git Actions with this repo
