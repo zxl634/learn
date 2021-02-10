@@ -1,30 +1,6 @@
 # Learning repository with posts and projects
 
-See the following list for specific posts or browse the individual folders for example projects, e.g. [python/django](python/django):
-```console
-$ tree -L 2 -I posts
-.
-├── Makefile
-├── README.md
-├── clojure
-│   └── 1
-├── clojurescript
-│   ├── 1
-│   ├── 2
-│   └── channels
-├── index.md -> README.md
-├── makefiles
-│   └── 1
-├── nwjs
-│   └── 1
-├── python
-│   ├── README.md
-│   └── django
-└── vim
-    └── 1
-
-14 directories, 4 files
-```
+See the following list for specific posts or browse the individual folders for example projects, e.g. [python/django](python/django).
 
 * [Setting up a Django project in Docker](python/django/1/)
 * [Changing string in file from make target](makefiles/1/)

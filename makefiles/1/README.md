@@ -2,7 +2,7 @@
 
 When running shell commands in a Makefile it is necessary to include `shell`.[1]
 
-For example in [this Makefile](../makefiles/1/Makefile) we have the following target:
+For example in [this Makefile](Makefile) we have the following target:
 ```
 bump-version:
 	gsed -i -E "s/(App_v)\w+/\1$(shell cat version)/" package.json 
