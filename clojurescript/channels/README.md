@@ -24,6 +24,3 @@ The goal is to be able to test async actions as described [here](https://stackov
 * `<!` and `>!` takes and puts messages (the end of the funnel is towards the exclamation mark when taking; the exclamation mark uses the funnul to communicate something when putting)
 * a channel can only convey a single value by default
 * Buffers can be used to hold values that have not been taken out of the channel
-
-* How do processes send messages?
-

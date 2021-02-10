@@ -2,6 +2,7 @@
   (:require-macros [cljs.core.async.macros :refer [go]])
   (:require
     [clojure.core.async :as async :refer [take!]]
+    [cljs.test :refer (async)]
     ))
 
 (defn my-go []
