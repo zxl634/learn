@@ -5,7 +5,6 @@ See the following list for specific posts or browse the individual folders for e
 * [Setting up a Django project in Docker](python/django/1/)
 * [Changing string in file from make target](makefiles/1/)
 
-4. [Starting a Django project](posts/10.md)
 5. [Setup ClojureScript project](posts/11.md)
 6. [Using Gdiffsplit in vertical split](vim/1/README.md)
 7. [Contributing to open source software](posts/12.md)
