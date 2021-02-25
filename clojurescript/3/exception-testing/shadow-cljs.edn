@@ -1,0 +1,18 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ []
+ :dev-http {8080 "public"}
+ :builds
+ {:test
+  {:target    :node-test
+   :output-to "out/node-tests.js"
+   :ns-regexp "demo"
+   :autorun   true}
+ :demo
+  {:target :browser
+   :modules {:main {:init-fn demo.app/init}}}}}
