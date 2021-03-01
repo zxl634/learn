@@ -7,6 +7,7 @@ Repository with posts and projects used for learning. Organised roughly by langu
 ### Django
 * [Setting up a Django project in Docker](python/django/1/)
 * [Use ClojureScript in Django project](python/django/2/) (WIP)
+* [Use test client to make post requests](python/django/3/)
 
 ## Vim
 * [Using Gdiffsplit in vertical split](vim/1/README.md)
@@ -17,6 +18,8 @@ Repository with posts and projects used for learning. Organised roughly by langu
 ## ClojureScript
 * [Setup ClojureScript project](clojurescript/1/)
 * [Use ClojureScript in Django project](python/django/2/) (WIP)
+* [Testing cljs with js errors](clojurescript/3/)
+* [Testing with cljs](clojurescript/2/)
 
 ## Clojure
 * [Setting up a Clojure program](clojure/1/)
