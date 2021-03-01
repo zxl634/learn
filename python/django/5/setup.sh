@@ -21,6 +21,7 @@ function clean-project () {
 }
 
 function make-files () {
+  cd "$__dir"/"$PROJECT_NAME" || exit
   cat << EOF > "$APP_NAME"/urls.py
 from django.conf.urls import url
 
@@ -64,13 +65,20 @@ EOF
 }
 
 function run-tests () {
+  cd "$__dir"/"$PROJECT_NAME" || exit
   "$VENV"/bin/python manage.py test "$APP_NAME"
+}
+
+function run-server () {
+  cd "$__dir"/"$PROJECT_NAME" || exit
+  "$VENV"/bin/python manage.py runserver 8881
 }
 
 case "$1" in
   create) clean-project && create-project && tree && run-tests;;
   clean) clean-project;;
   test) run-tests;;
+  rs) run-server;;
   *) echo "need argument";;
 esac
 
