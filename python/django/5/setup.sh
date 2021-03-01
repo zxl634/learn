@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-PROJECT_NAME=demo_project
-APP_NAME=demo_app
+PROJECT_NAME=project
+APP_NAME=app
 __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 VENV="$__dir"/venv/
 
@@ -9,8 +9,8 @@ function create-project () {
   virtualenv -p python venv
   "$VENV"/bin/python -m pip install Django==1.11.29
   "$VENV"/bin/django-admin startproject "$PROJECT_NAME" 
-  cd "$PROJECT_NAME" && "$VENV"/bin/python manage.py migrate
-  "$VENV"/bin/python manage.py startapp "$APP_NAME" 
+  cd "$PROJECT_NAME" && "$VENV"/bin/python manage.py startapp "$APP_NAME" 
+  "$VENV"/bin/python manage.py migrate
   make-files
 }
 
@@ -26,16 +26,17 @@ from django.conf.urls import url
 
 from . import views
 
+app_name = '$APP_NAME'
 urlpatterns = [
     url(r'^$', views.index, name='index'),
 ]
 EOF
-cat << EOF > "$APP_NAME"/urls.py
+cat << EOF > "$PROJECT_NAME"/urls.py
 from django.conf.urls import url, include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^"$APP_NAME"/', include('"$APP_NAME".urls')),
+    url(r'^$APP_NAME/', include('$APP_NAME.urls')),
     url(r'^admin/', admin.site.urls),
 ]
 EOF
@@ -49,9 +50,16 @@ cat << EOF > "$APP_NAME"/tests.py
 from django.test import TestCase
 from django.urls import reverse
 
-class FirstTestCase(TestCase):
-    def test_post(self):
+class FirstTest(TestCase):
+    def first_test(self):
         self.assertEqual(1, 1)
+
+
+class ViewTests(TestCase):
+    def test_view(self):
+        response = self.client.get(reverse('$APP_NAME:index'))
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Hello, world")
 EOF
 }
 
