@@ -68,3 +68,5 @@ case "$1" in
   run-tests) run-tests;;
   *) echo "need argument";;
 esac
+
+cd "$__dir" || exit
