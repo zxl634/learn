@@ -9,12 +9,12 @@ function create-project () {
 }
 
 function clean-project () {
-  cd "$__dir"
+  cd "$__dir" || exit
   rm -rf "$PROJECT_NAME"
 }
 
 function make-demo-dir-and-files () {
-  cd "$PROJECT_NAME"/src/main/
+  cd "$PROJECT_NAME"/src/main/ || exit
   mkdir demo && cd demo && touch app.cljs
   cat << EOF > app.cljs
 (ns demo.app)

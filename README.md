@@ -7,7 +7,8 @@ Repository with posts and projects used for learning. Organised roughly by langu
 ### Django
 * [Setting up a Django project in Docker](python/django/1/)
 * [Use ClojureScript in Django project](python/django/2/) (WIP)
-* [Use test client to make post requests](python/django/3/)
+* [Use test client to make post requests](python/django/4/)
+* [Using LiveServerTestCase](python/django/5/)
 
 ## Vim
 * [Using Gdiffsplit in vertical split](vim/1/README.md)
