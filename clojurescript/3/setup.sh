@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-# set -e # Exit immediately if a command exits with a non-zero status.
-
 PROJECT_NAME=exception-testing
 __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
@@ -62,11 +60,11 @@ EOF
 
 function run-tests () {
   cd "$__dir"/"$PROJECT_NAME" && shadow-cljs compile test && node out/node-tests.js
-
 }
 
 case "$1" in
   create) create-project && make-demo-dir-and-files && edit-edn && tree src/ && run-tests;;
   clean) clean-project && ls;;
+  run-tests) run-tests;;
   *) echo "need argument";;
 esac
