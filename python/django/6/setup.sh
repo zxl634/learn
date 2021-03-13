@@ -101,6 +101,10 @@ function get-gist {
   wget "$_url" -O "$_file"
 }
 
+function add-installed-apps {
+  awk '/INSTALLED_APPS/ { print; print "    '"'""$APP_NAME""'"'"; next }1' "$PROJECT_NAME"/"$PROJECT_NAME"/settings.py 
+}
+
 case "$1" in
   create) clean-project && create-project && tree && run-tests && echo "run server with ./setup.sh rs";;
   clean) clean-project;;
