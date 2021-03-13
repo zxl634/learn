@@ -9,4 +9,3 @@ class AppConfig(AppConfig):
 
     def ready(self):
         from . import signals
-        # import project.app.signals  # noqa
