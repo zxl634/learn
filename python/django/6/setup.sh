@@ -74,6 +74,7 @@ function run-tests () {
 function run-server () {
   cd "$__dir"/"$PROJECT_NAME" || exit
   "$VENV"/bin/python manage.py runserver 8881
+  open http://127.0.0.1:8881/
 }
 
 function create-signal-file () {

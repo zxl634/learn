@@ -6,7 +6,7 @@ from django.apps import AppConfig
 
 class AppConfig(AppConfig):
     assert False
-    name = 'project.app'
+    name = 'app'
 
     def ready(self):
         import project.app.signals  # noqa
