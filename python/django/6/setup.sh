@@ -102,7 +102,8 @@ function get-gist {
 }
 
 function add-installed-apps {
-  awk '/INSTALLED_APPS/ { print; print "    '"'""$APP_NAME.apps.${APP_NAME^}Config""'"'"; next }1' "$PROJECT_NAME"/"$PROJECT_NAME"/settings.py 
+  _settings_file="$PROJECT_NAME"/"$PROJECT_NAME"/settings.py
+  awk '/INSTALLED_APPS/ { print; print "    '"'""$APP_NAME.apps.${APP_NAME^}Config""'"'"; next }1' "$_settings_file"  > "$_settings_file".tmp && mv "$_settings_file".tmp "$_settings_file"
 }
 
 case "$1" in
