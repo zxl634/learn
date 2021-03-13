@@ -118,7 +118,7 @@ case "$1" in
   clean) clean-project;;
   test) run-tests;;
   rs) run-server;;
-  pm) "$VENV"/bin/python "$PROJECT_NAME"/manage.py "${@:2}" ;;
+  pm) "$VENV"/bin/python "$PROJECT_NAME"/manage.py "${@:2}";;
   create-signal-file) create-signal-file;;
   *) echo "unknown argument, but calling $1 with arguments ${@:2}" && "$1" "${@:2}";;
 esac
