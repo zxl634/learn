@@ -9,6 +9,7 @@ Repository with posts and projects used for learning. Organised roughly by langu
 * [Use ClojureScript in Django project](python/django/2/) (WIP)
 * [Use test client to make post requests](python/django/4/)
 * [Using LiveServerTestCase](python/django/5/)
+* [Signals](python/django/6)
 
 ## Vim
 * [Using Gdiffsplit in vertical split](vim/1/README.md)
@@ -24,6 +25,9 @@ Repository with posts and projects used for learning. Organised roughly by langu
 
 ## Clojure
 * [Setting up a Clojure program](clojure/1/)
+
+## Bash
+* [Copying dirs](bash/1/)
 
 ## Nwjs
 * [Simple demo of NW.js](nwjs/1/)
