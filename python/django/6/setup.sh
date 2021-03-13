@@ -12,6 +12,7 @@ function create-project () {
   cd "$PROJECT_NAME" && "$VENV"/bin/python manage.py startapp "$APP_NAME" 
   "$VENV"/bin/python manage.py migrate
   make-files
+  add-installed-apps
 }
 
 function clean-project () {
@@ -73,8 +74,11 @@ function run-tests () {
 
 function run-server () {
   cd "$__dir"/"$PROJECT_NAME" || exit
-  "$VENV"/bin/python manage.py runserver 8881
-  open http://127.0.0.1:8881/
+  _port=8881
+  kill -9 "$(lsof -i:"$_port" -t)" || true
+  "$VENV"/bin/python manage.py runserver "$_port" &
+  sleep 2
+  open http://127.0.0.1:"$_port"/"$APP_NAME"
 }
 
 function create-signal-file () {
@@ -83,7 +87,7 @@ function create-signal-file () {
   cat << EOF >> "$APP_NAME"/apps.py
 
     def ready(self):
-        import $PROJECT_NAME.$APP_NAME.signals  # noqa
+        from . import signals
 EOF
 
 }
@@ -102,8 +106,11 @@ function get-gist {
 }
 
 function add-installed-apps {
-  _settings_file="$PROJECT_NAME"/"$PROJECT_NAME"/settings.py
-  awk '/INSTALLED_APPS/ { print; print "    '"'""$APP_NAME.apps.${APP_NAME^}Config""'"'"; next }1' "$_settings_file"  > "$_settings_file".tmp && mv "$_settings_file".tmp "$_settings_file"
+  cd "$__dir"/"$PROJECT_NAME" || exit
+  _settings_file="$PROJECT_NAME"/settings.py
+  _tmp_file="$_settings_file".tmp
+  awk '/INSTALLED_APPS/ { print; print "    '"'""$APP_NAME.apps.${APP_NAME^}Config""'"',"; next }1' "$_settings_file" > "$_tmp_file"
+  mv "$_tmp_file" "$_settings_file"
 }
 
 case "$1" in
