@@ -10,9 +10,8 @@ function create-project () {
   "$VENV"/bin/python -m pip install Django==1.11.29
   "$VENV"/bin/django-admin startproject "$PROJECT_NAME" 
   cd "$PROJECT_NAME" && "$VENV"/bin/python manage.py startapp "$APP_NAME" 
-  "$VENV"/bin/python manage.py migrate
-  make-files
   add-installed-apps
+  make-files
 }
 
 function clean-project () {
@@ -65,6 +64,7 @@ class ViewTests(TestCase):
 EOF
 create-signal-file
 create-init-file
+create-models
 }
 
 function run-tests () {
@@ -84,12 +84,21 @@ function run-server () {
 function create-signal-file () {
   cd "$__dir"/"$PROJECT_NAME" || exit
   get-gist "9942beb2335fe0e141b452b14a853e9e" "$APP_NAME"/signals.py
+  sed -i '' 's/myapp/'"$APP_NAME"'/g' "$APP_NAME/signals.py"
+  sed -i '' 's/MyModel/Question/g' "$APP_NAME/signals.py"
   cat << EOF >> "$APP_NAME"/apps.py
 
     def ready(self):
         from . import signals
 EOF
+}
 
+function create-models {
+  cd "$__dir"/"$PROJECT_NAME" || exit
+  rm "$APP_NAME"/models.py
+  get-gist "943bf420d16edc13d9660daa10510f29" "$APP_NAME"/models.py
+  "$VENV"/bin/python manage.py makemigrations
+  "$VENV"/bin/python manage.py migrate 
 }
 
 function create-init-file {
