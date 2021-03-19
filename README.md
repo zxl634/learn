@@ -10,6 +10,7 @@ Repository with posts and projects used for learning. Organised roughly by langu
 * [Use test client to make post requests](python/django/4/)
 * [Using LiveServerTestCase](python/django/5/)
 * [Signals](python/django/6)
+* [Testing models](python/django/7)
 
 ## Vim
 * [Using Gdiffsplit in vertical split](vim/1/README.md)
