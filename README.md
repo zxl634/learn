@@ -3,6 +3,7 @@
 Repository with posts and projects used for learning. Organised roughly by language and assorted topics in [posts](posts/).
 
 ## Python
+* [Classes and constructors in derived classes](python/1/)
 
 ### Django
 * [Setting up a Django project in Docker](python/django/1/)
