@@ -4,6 +4,8 @@ Repository with posts and projects used for learning. Organised roughly by langu
 
 ## Python
 * [Classes and constructors in derived classes](python/1/)
+* [Parameters to derived classes](python/2/)
+* [Instance variable in class](python/3/)
 
 ### Django
 * [Setting up a Django project in Docker](python/django/1/)
